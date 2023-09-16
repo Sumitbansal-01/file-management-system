@@ -1,0 +1,30 @@
+{
+  "name": "file-management-system",
+  "version": "1.0.0",
+  "description": "This is a file management system where user can create collection of folder , folders and store files",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devStart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumitbansal-01/file-management-system.git"
+  },
+  "author": "Sumit Bansal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sumitbansal-01/file-management-system/issues"
+  },
+  "homepage": "https://github.com/Sumitbansal-01/file-management-system#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "mongoose": "^7.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
