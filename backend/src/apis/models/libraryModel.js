@@ -6,6 +6,7 @@ const LibrarySchema = new mongoose.Schema(
         name: {
             type: String,
             required: true,
+            trim: true,
         },
         description: {
             type: String,
@@ -31,14 +32,7 @@ const LibrarySchema = new mongoose.Schema(
             type: Date,
             immutable: true,
             default: dateFormat()
-        },
-        sharedPeople: {
-            type: [{
-                type: mongoose.SchemaTypes.ObjectId,
-                ref: "Users"
-            }],
-            default: []
-        },
+        }
     },
     {
         timestamps: true

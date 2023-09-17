@@ -6,10 +6,13 @@ const fileSchema = new mongoose.Schema(
         name: {
             type: String,
             required: true,
+            trim: true,
         },
         description: {
             type: String,
-            default: ""
+            default: "",
+            maxlength: 50,
+            trim: true,
         },
         category: {
             type: String,
@@ -42,11 +45,6 @@ const fileSchema = new mongoose.Schema(
             index: true,
         },
         isBin: {
-            type: Boolean,
-            default: false,
-            index: true,
-        },
-        isDelete: {
             type: Boolean,
             default: false,
             index: true,
