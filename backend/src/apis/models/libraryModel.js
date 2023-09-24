@@ -1,7 +1,7 @@
-const { mongoose } = require("../../config/importModules");
+const { mongoose } = require("../../config/importModule");
 const dateFormat = require("../helpers/dateFormatDm")
 
-const LibrarySchema = new mongoose.Schema(
+const librarySchema = new mongoose.Schema(
     {
         name: {
             type: String,
@@ -12,7 +12,7 @@ const LibrarySchema = new mongoose.Schema(
             type: String,
             default: ""
         },
-        private: {
+        isPrivate: {
             type: Boolean,
             default: true
         },
@@ -39,5 +39,5 @@ const LibrarySchema = new mongoose.Schema(
     }
 )
 
-const LibraryModel = mongoose.model('Libraries', LibrarySchema)
-module.exports = LibraryModel
+const libraryModel = mongoose.model('Libraries', librarySchema)
+module.exports = libraryModel
