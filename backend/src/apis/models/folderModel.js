@@ -50,5 +50,5 @@ const folderSchema = new mongoose.Schema(
     }
 )
 
-const folderModel = mongoose.model('Libraries', folderSchema)
+const folderModel = mongoose.model('libraries', folderSchema)
 module.exports = folderModel
